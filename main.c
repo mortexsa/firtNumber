@@ -23,29 +23,6 @@ void exponentiationModulaire (mpz_t resultat, mpz_t nombre, mpz_t exposant) {
 	mpz_clear(i);
 }
 
-// int jacobi(int a,int b){
-// 	int tmp;
-// 	if ( b<=0 || ( b%2 )==0 ) return 0;
-// 	int j=1;
-// 	if (a<0) {
-// 		a =- a;
-// 		if (( b%4 )==3 ) j =- j;
-// 	}
-// 	while (a != 0) {
-// 		while ((a % 2) == 0) {
-// 			a = a/2;
-// 			if ((b % 8) == 3 || (b % 8) == 5) j =- j;
-// 		}
-// 		tmp = a;
-// 		a = b;
-// 		b = tmp;
-// 		if ((a % 4) == 3 && (b % 4) == 3) j =- j;
-// 		a = a % b;
-// 	}
-// 	if (b == 1) {return j;}
-// 	else return 0;
-// }
-
 void jacobiSymbol (mpz_t resultat, mpz_t a, mpz_t b) {
 	mpz_t tmp,tmp2,i;
 	mpz_inits(tmp,tmp2,i,NULL);
